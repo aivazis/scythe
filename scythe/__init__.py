@@ -16,6 +16,10 @@ from . import (
     meta,
 )
 
+# publish the resource types
+from .Resource import gold, oil, wood, food
+
+
 # administrative
 def copyright():
     """
