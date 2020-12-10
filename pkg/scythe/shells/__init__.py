@@ -5,9 +5,9 @@
 
 
 # my action protocol
-from .Action import Action
+from .Action import Action as action
 # and the base command panel
-from .Command import Command
+from .Command import Command as command
 
 # the plexus
 from .Scythe import Scythe as scythe
