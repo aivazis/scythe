@@ -20,7 +20,7 @@ version = (major, minor, micro, revision)
 
 
 # decorations for the help system
-copyright = f"copyright (c) {span}  all rights reserved"
+copyright = f"copyright (c) {span} all rights reserved"
 
 banner = f"""
     {title} {major}.{minor}.{micro} revision {revision}
@@ -29,7 +29,7 @@ banner = f"""
 
 header = banner + f"""
 authors:
-    michael a.g. aïvázis <michael.aivazis@orthologue.com>
+    Michael Aïvázis   <michael.aivazis@orthologue.com>
 """
 
 license = header + f"""
