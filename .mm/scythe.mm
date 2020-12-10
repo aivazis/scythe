@@ -6,10 +6,6 @@
 #
 
 
-# project meta-data
-scythe.major := 1
-scythe.minor := 0
-
 # scythe consists of a python package
 scythe.packages := scythe.pkg
 # libraries
@@ -20,7 +16,6 @@ scythe.extensions :=
 scythe.tests :=
 
 # the scythe package meta-data
-scythe.pkg.root := scythe/
 scythe.pkg.stem := scythe
 scythe.pkg.drivers := scythe
 
