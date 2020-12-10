@@ -8,10 +8,23 @@
 scythe is a python simulation of the board game by the same name
 """
 
-# publich
-from . import (
-    meta,
+# import and publish pyre symbols
+from pyre import (
+    # the manager of the pyre runtime
+    executive,
 )
+
+
+# register the package with the framework
+package = executive.registerPackage(name='ampcor', file=__file__)
+# save the geography
+home, prefix, defaults = package.layout()
+
+
+# publish the local modules
+from . import meta
+from . import shells
+
 
 # publish the resource types
 from .Resource import gold, oil, wood, food
