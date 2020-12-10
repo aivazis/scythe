@@ -10,6 +10,10 @@ scythe is a python simulation of the board game by the same name
 
 # import and publish pyre symbols
 from pyre import (
+    # protocols, components, traits, and their infrastructure
+    schemata, constraints, properties, protocol, component, foundry,
+    # decorators
+    export, provides,
     # the manager of the pyre runtime
     executive,
 )
@@ -24,6 +28,7 @@ home, prefix, defaults = package.layout()
 # publish the local modules
 from . import meta
 from . import shells
+from . import cli
 
 
 # publish the resource types
