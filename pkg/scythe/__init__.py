@@ -1,10 +1,8 @@
 # -*- Python -*-
 # -*- coding: utf-8 -*-
 #
-# michael a.g. aïvázis
-# orthologue
-# (c) 2018-2019 all rights reserved
-#
+# michael a.g. aïvázis <michael.aivazis@orthologue.com>
+# (c) 2018-2020 all rights reserved
 
 
 """
