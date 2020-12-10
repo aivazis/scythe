@@ -2,31 +2,33 @@
 # -*- coding: utf-8 -*-
 #
 # michael a.g. aïvázis <michael.aivazis@orthologue.com>
-# (c) 2018-2019 all rights reserved
+# (c) 2018-2020 all rights reserved
 #
 
 # expansion placeholders
-date = "TODAY"
-major = MAJOR
-minor = MINOR
-revision = "REVISION"
+title = "@TITLE@"
+date = "@TODAY@"
+major = @MAJOR@
+minor = @MINOR@
+micro = @MICRO@
+revision = "@REVISION@"
 
 
 # assemble the version tuple
-version = (major, minor, revision)
+version = (major, minor, micro, revision)
 
 
 # decorations for the help system
-copyright = "copyright (c) 2018-2019 all rights reserved"
+copyright = "copyright (c) 2018-2020 all rights reserved"
 
 banner = f"""
-    scythe {major}.{minor} revision {revision}
+    {title} {major}.{minor}.{micro} revision {revision}
     {copyright}
 """
 
 header = banner + """
-author:
-    Michael Aïvázis     <michael.aivazis@orthologue.com>
+authors:
+    michael a.g. aïvázis <michael.aivazis@orthologue.com>
 """
 
 license = header + """
@@ -43,7 +45,7 @@ license:
       the documentation and other materials provided with the
       distribution.
 
-    * Neither the name scythe nor the names of its contributors may be
+    * Neither the name "{title}" nor the names of its contributors may be
       used to endorse or promote products derived from this software
       without specific prior written permission.
 
