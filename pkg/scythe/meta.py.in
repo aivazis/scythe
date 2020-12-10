@@ -7,6 +7,7 @@
 
 # expansion placeholders
 title = "@TITLE@"
+span = "2018-2020"
 date = "@TODAY@"
 major = @MAJOR@
 minor = @MINOR@
@@ -19,19 +20,19 @@ version = (major, minor, micro, revision)
 
 
 # decorations for the help system
-copyright = "copyright (c) 2018-2020 all rights reserved"
+copyright = f"copyright (c) {span}  all rights reserved"
 
 banner = f"""
     {title} {major}.{minor}.{micro} revision {revision}
     {copyright}
 """
 
-header = banner + """
+header = banner + f"""
 authors:
     michael a.g. aïvázis <michael.aivazis@orthologue.com>
 """
 
-license = header + """
+license = header + f"""
 license:
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
@@ -63,7 +64,7 @@ license:
     POSSIBILITY OF SUCH DAMAGE.
 """
 
-acknowledgments = header + """
+acknowledgments = header + f"""
 acknowledgments:
 """
 
