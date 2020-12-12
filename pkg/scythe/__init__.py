@@ -29,10 +29,7 @@ home, prefix, defaults = package.layout()
 from . import meta
 from . import shells
 from . import cli
-
-
-# publish the resource types
-from .Resource import gold, oil, wood, food
+from . import game
 
 
 # administrative
