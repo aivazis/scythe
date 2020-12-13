@@ -37,7 +37,7 @@ class Resource(tuple):
         # subtract {other}'s resources from mine
         result = type(self)(r1-r2 for r1, r2 in zip(self, other))
         # check that there are no negative entries
-        if tuple(filter(lmabda x: x < 0, result)):
+        if tuple(filter(lambda x: x < 0, result)):
             # which is an error
             channel = journal.firewall("scythe.resources")
             # that must be reported
