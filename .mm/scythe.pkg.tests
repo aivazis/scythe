@@ -1,0 +1,15 @@
+# -*- Makefile -*-
+#
+# michael a.g. aïvázis <michael.aivazis@orthologue.com>
+# (c) 2018-2020 all rights reserved
+
+
+# the scythe package test suite
+scythe.pkg.tests.stem := scythe.pkg
+scythe.pkg.tests.prerequisites := scythe.pkg
+
+# global clean up
+tests.ampcor.pkg.clean +=
+
+
+# end of file
